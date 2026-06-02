@@ -2,7 +2,7 @@ import com.android.build.api.dsl.LibraryExtension
 
 plugins {
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.android.library)
+    id("com.android.library")
 }
 
 kotlin { jvmToolchain(25) }
