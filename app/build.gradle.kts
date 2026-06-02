@@ -18,7 +18,6 @@ configure<LibraryExtension> {
         // versionCode  // not applicable for library modules
         // versionName  // not applicable for library modules
         minSdk = 24
-        targetSdk = 36
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         flavorDimensions += "free"
@@ -46,7 +45,6 @@ configure<LibraryExtension> {
             // signingConfig removed — library modules don't sign APKs
         }
         getByName("debug") {
-            isDebuggable = true
             // applicationIdSuffix removed — not applicable for library modules
         }
     }
