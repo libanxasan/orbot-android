@@ -18,6 +18,9 @@ configure<LibraryExtension> {
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         missingDimensionStrategy("free", "fullperm")
+        buildConfigField("String", "APPLICATION_ID", "\"org.torproject.android\"")
+        buildConfigField("int", "VERSION_CODE", orbotBaseVersionCode.toString())
+        buildConfigField("String", "VERSION_NAME", "\"${getVersionName()}\"")
     }
 
     compileOptions {
