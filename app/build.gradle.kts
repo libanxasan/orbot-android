@@ -255,3 +255,4 @@ val copyLicenseToAssets by tasks.registering(Copy::class) {
     from(rootProject.file("LICENSE"))
     into(layout.projectDirectory.dir("src/main/assets"))
 }
+}
