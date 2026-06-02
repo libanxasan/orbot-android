@@ -19,8 +19,8 @@ configure<LibraryExtension> {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         missingDimensionStrategy("free", "fullperm")
         buildConfigField("String", "APPLICATION_ID", "\"org.torproject.android\"")
-        buildConfigField("int", "VERSION_CODE", orbotBaseVersionCode.toString())
-        buildConfigField("String", "VERSION_NAME", "\"${getVersionName()}\"")
+        buildConfigField("int", "VERSION_CODE", "1")
+        buildConfigField("String", "VERSION_NAME", "\"1.0.0\"")
     }
 
     compileOptions {
