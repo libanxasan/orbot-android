@@ -21,6 +21,7 @@ configure<LibraryExtension> {
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         flavorDimensions += "free"
+        missingDimensionStrategy("free", "fullperm")
     }
 
     compileOptions {
